@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Volume">
+
+    <TextView
+        android:id="@+id/tv_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PERHITUNGAN VOLUME"
+        android:textSize="30sp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_balok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Balok"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volume"
+        app:layout_constraintEnd_toStartOf="@+id/btn_piramida"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_piramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Piramida"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tabung"
+        app:layout_constraintStart_toEndOf="@+id/btn_balok"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volume" />
+
+    <Button
+        android:id="@+id/btn_tabung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Tabung"
+        app:layout_constraintStart_toEndOf="@+id/btn_piramida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volume" />
+
+    <TextView
+        android:id="@+id/bentuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="BENTUK"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_piramida" />
+
+
+    <TextView
+        android:id="@+id/tv_panjangBalok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Panjang alas = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bentuk" />
+
+    <EditText
+        android:id="@+id/et_panjangBalok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Panjang Alas"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_panjangBalok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_panjangBalok"
+        app:layout_constraintTop_toTopOf="@+id/tv_panjangBalok" />
+
+    <TextView
+        android:id="@+id/tv_lebarBalok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Lebar alas = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_panjangBalok" />
+
+    <EditText
+        android:id="@+id/et_lebarBalok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Lebar Alas"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lebarBalok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_lebarBalok"
+        app:layout_constraintTop_toTopOf="@+id/tv_lebarBalok" />
+
+    <TextView
+        android:id="@+id/tv_tinggiBalok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Tinggi balok = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lebarBalok" />
+
+    <EditText
+        android:id="@+id/et_tinggiBalok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Tinggi balok"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tinggiBalok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_tinggiBalok"
+        app:layout_constraintTop_toTopOf="@+id/tv_tinggiBalok" />
+
+    <TextView
+        android:id="@+id/tv_panjangPiramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Panjang alas = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bentuk" />
+
+    <EditText
+        android:id="@+id/et_panjangPiramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Panjang Alas"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_panjangPiramida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_panjangPiramida"
+        app:layout_constraintTop_toTopOf="@+id/tv_panjangPiramida" />
+
+    <TextView
+        android:id="@+id/tv_lebarPiramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Lebar alas = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_panjangPiramida" />
+
+    <EditText
+        android:id="@+id/et_lebarPiramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Lebar Alas"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lebarPiramida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_lebarPiramida"
+        app:layout_constraintTop_toTopOf="@+id/tv_lebarPiramida" />
+
+    <TextView
+        android:id="@+id/tv_tinggiPiramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Tinggi piramida = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lebarPiramida" />
+
+    <EditText
+        android:id="@+id/et_tinggiPiramida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Tinggi piramida"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tinggiPiramida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_tinggiPiramida"
+        app:layout_constraintTop_toTopOf="@+id/tv_tinggiPiramida" />
+
+    <TextView
+        android:id="@+id/tv_jaritabung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Jari-jari = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bentuk" />
+
+    <EditText
+        android:id="@+id/et_jaritabung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Panjang Jari-jari"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_jaritabung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_jaritabung"
+        app:layout_constraintTop_toTopOf="@+id/tv_jaritabung" />
+
+    <TextView
+        android:id="@+id/tv_tinggitabung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Tinggi Tabung = "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jaritabung" />
+
+    <EditText
+        android:id="@+id/et_tinggitabung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Isi Tinggi tabung"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tinggitabung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_tinggitabung"
+        app:layout_constraintTop_toTopOf="@+id/tv_tinggitabung" />
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="hitung"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_piramida"/>
+
+    <TextView
+        android:id="@+id/tv_tulisanHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="HASIL"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hitung" />
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tulisanHasil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

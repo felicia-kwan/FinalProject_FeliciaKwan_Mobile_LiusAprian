@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/counter"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Counter"/>
+    <item
+        android:id="@+id/area"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Area"/>
+
+    <item
+        android:id="@+id/volume"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Volume"/>
+
+</menu>
